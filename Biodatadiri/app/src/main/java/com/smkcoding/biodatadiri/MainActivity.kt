@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     //inisialisasi variabel global untuk menampung data inputan user
     private var namaInput : String = ""
+    private var umurInput : String = ""
     private var emailInput : String = ""
     private var telpInput : String = ""
     private var alamatInput : String = ""
@@ -29,7 +30,8 @@ class MainActivity : AppCompatActivity() {
             spinnerGender.adapter = adapter     }
         //fungsi untuk melakukan validasi input
     private fun validasiInput(){         //mendapatkan value/data dari tiap EditText dan menyimpannya ke dalam variabel yang telah dibuat
-             namaInput = edtName.text.toString()
+            namaInput = edtName.text.toString()
+            umurInput = edtUmur.text.toString()
             emailInput = edtEmail.text.toString()
             telpInput = edtTelp.text.toString()
             alamatInput = edtAddress.text.toString()
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         when{             //cek di tiap inputan apakah kosong atau tidak, jika kosong maka tampilkan error
             namaInput.isEmpty() -> edtName.error = "Nama tidak boleh kosong"
             genderInput.equals("Pilih Jenis Kelamin", ignoreCase = true) -> tampilToast("Jenis Kelamin harus dipilih")
+            umurInput.isEmpty() -> edtUmur.error = "Umur tidak boleh kosong"
             emailInput.isEmpty() -> edtEmail.error = "Email tidak boleh kosong"
             telpInput.isEmpty() -> edtTelp.error = "Telp tidak boleh kosong"
             alamatInput.isEmpty() -> edtAddress.error = "Alamat tidak boleh kosong"
@@ -55,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                 val bundle = Bundle()
                     bundle.putString("nama", namaInput)
                     bundle.putString("gender", genderInput)
+                    bundle.putString("umur", umurInput)
                     bundle.putString("email", emailInput)
                     bundle.putString("telp", telpInput)
                     bundle.putString("alamat", alamatInput)

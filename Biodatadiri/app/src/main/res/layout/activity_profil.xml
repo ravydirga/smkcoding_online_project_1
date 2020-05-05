@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="18dp"
-                    android:text="Laki - laki"/>
+                    android:text="Dummy text name"/>
         </LinearLayout>
 
         <LinearLayout
@@ -89,7 +89,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Jenis Kelamin:"/>
+                    android:text="Umur (th)"/>
+
+            <TextView
+                    android:id="@+id/txtUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Dummy text name"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Email:"/>
 
             <TextView
                     android:id="@+id/txtEmail"
@@ -97,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="18dp"
-                    android:text="ravydirga27@gmail.com"/>
+                    android:text="Dummy text name"/>
         </LinearLayout>
 
         <LinearLayout
@@ -110,7 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Jenis Kelamin:"/>
+                    android:text="Telp:"/>
 
             <TextView
                     android:id="@+id/txtTelp"
@@ -118,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="18dp"
-                    android:text="085850127232"/>
+                    android:text="Dummy text name"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,11 +163,18 @@
                     android:text="Dummy text name"/>
         </LinearLayout>
 
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
         <Button
                 android:id="@+id/btnEditname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:background="@drawable/button_rounded"
                 android:text="EDIT NAMA"/>
 
         <Button
@@ -154,7 +182,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:background="@drawable/button_rounded"
                 android:text="TELEPON"/>
+         <Button
+                 android:id="@+id/btnAboutmi"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:background="@drawable/button_rounded"
+                 android:text="About Me"/>
+        </LinearLayout>
 
     </LinearLayout>
 

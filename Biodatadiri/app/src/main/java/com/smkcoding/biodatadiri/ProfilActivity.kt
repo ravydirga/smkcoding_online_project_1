@@ -17,6 +17,7 @@ class ProfilActivity : AppCompatActivity() {
         ambilData()
         btnEditname.setOnClickListener({ navigasiKeEditProfil() })
         btnCall.setOnClickListener { dialPhoneNumber(txtTelp.text.toString()) }
+        btnAboutmi.setOnClickListener({keAboutmeActivity()})
     }
 
     companion object {
@@ -28,11 +29,13 @@ class ProfilActivity : AppCompatActivity() {
         val bundle = intent.extras
         val nama = bundle?.getString("nama")
         val gender = bundle?.getString("gender")
+        val umur = bundle?.getString("umur")
         val email = bundle?.getString("email")
         val telp = bundle?.getString("telp")
         val alamat = bundle?.getString("alamat")
         txtName.text = nama
         txtGender.text = gender
+        txtUmur.text = umur
         txtEmail.text = email
         txtTelp.text = telp
         txtAddress.text = alamat
@@ -66,6 +69,11 @@ class ProfilActivity : AppCompatActivity() {
         if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)
         }
+    }
+
+    private fun keAboutmeActivity(){
+        val intent = Intent (this, AboutmeActivity::class.java)
+        startActivity(intent)
     }
 
 }
