@@ -175,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@drawable/button_rounded"
+                android:textColor="@color/colorWhite"
                 android:text="EDIT NAMA"/>
 
         <Button
@@ -183,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@drawable/button_rounded"
+                android:textColor="@color/colorWhite"
                 android:text="TELEPON"/>
          <Button
                  android:id="@+id/btnAboutmi"
@@ -190,6 +192,7 @@
                  android:layout_height="wrap_content"
                  android:layout_margin="16dp"
                  android:background="@drawable/button_rounded"
+                 android:textColor="@color/colorWhite"
                  android:text="About Me"/>
         </LinearLayout>
 
